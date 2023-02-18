@@ -1,15 +1,7 @@
-cargo-features = ["different-binary-name"]
-
 [package]
 name = "leptos_start"
 version = "0.1.0"
 edition = "2021"
-
-# https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#different-binary-name
-[[bin]]
-name = "starter"
-filename = "starter"
-path = "src/main.rs"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
