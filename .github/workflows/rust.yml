@@ -18,6 +18,8 @@ jobs:
     - run: rustup update nightly && rustup default nightly
     - run: rustup target add wasm32-unknown-unknown
     - run: wget -qO- https://github.com/thedodd/trunk/releases/download/v0.16.0/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
+    - name: Tailwindcss
+      run: npx tailwindcss -i ./input.css -o ./style/output.css
     - name: Build
       run: ./trunk build --release
     - name: Upload artifacts
