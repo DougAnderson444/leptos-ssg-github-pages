@@ -36,4 +36,10 @@ pub fn main() {
     // no client-side main function
     // unless we want this to work with e.g., Trunk for pure client-side testing
     // see lib.rs for hydration function instead
+
+    // to static site generate, we need to mount from HttpServer
+    use leptos::*; // bring `mount_to_body` into scope
+    use leptos_start::app::*; // bring `App` into scope
+
+    mount_to_body(|cx| view! { cx, <App /> });
 }
