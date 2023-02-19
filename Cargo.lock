@@ -991,6 +991,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "leptos-ssg-github-pages"
+version = "0.1.0"
+dependencies = [
+ "actix-files",
+ "actix-web",
+ "cfg-if",
+ "console_error_panic_hook",
+ "console_log",
+ "leptos",
+ "leptos_actix",
+ "leptos_meta",
+ "leptos_router",
+ "log",
+ "simple_logger",
+ "wasm-bindgen",
+]
+
+[[package]]
 name = "leptos_actix"
 version = "0.2.0-alpha2"
 source = "git+https://github.com/leptos-rs/leptos#20f24d2f3a97aeeb7b050085db67dd63144796e6"
@@ -1156,24 +1174,6 @@ dependencies = [
  "serde_urlencoded",
  "syn",
  "thiserror",
-]
-
-[[package]]
-name = "leptos_start"
-version = "0.1.0"
-dependencies = [
- "actix-files",
- "actix-web",
- "cfg-if",
- "console_error_panic_hook",
- "console_log",
- "leptos",
- "leptos_actix",
- "leptos_meta",
- "leptos_router",
- "log",
- "simple_logger",
- "wasm-bindgen",
 ]
 
 [[package]]

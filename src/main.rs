@@ -5,7 +5,7 @@ async fn main() -> std::io::Result<()> {
     use actix_web::*;
     use leptos::*;
     use leptos_actix::{generate_route_list, LeptosRoutes};
-    use leptos_start::app::*;
+    use leptos_ssg_github_pages::app::*;
 
     let conf = get_configuration(None).await.unwrap();
     let addr = conf.leptos_options.site_addr;
@@ -39,7 +39,7 @@ pub fn main() {
 
     // to static site generate, we need to mount from HttpServer
     use leptos::*; // bring `mount_to_body` into scope
-    use leptos_start::app::*; // bring `App` into scope
+    use leptos_ssg_github_pages::app::*; // bring `App` into scope
 
     mount_to_body(|cx| view! { cx, <App /> });
 }
